@@ -1,0 +1,11 @@
+html {
+  --base-color-background: #282c34;
+  --base-color-link: #61dafb;
+  --base-color: white;
+}
+
+html[data-theme="dark"] {
+  --base-color-background: white;
+  --base-color-link: #fe016c;
+  --base-color: #232323;
+}
