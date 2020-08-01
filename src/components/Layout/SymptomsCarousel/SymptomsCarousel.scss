@@ -1,0 +1,18 @@
+.Carousel{
+  overflow: scroll;
+  position: relative;
+  padding: 10px;
+
+  &__title {
+    font-size: 16px;
+    color: #929292;
+    padding: 0px 10px;
+  }
+  &__container {
+    white-space: nowrap;
+
+  }
+}
+
+
+

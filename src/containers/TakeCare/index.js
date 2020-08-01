@@ -1,11 +1,11 @@
 import React from 'react';
-import SymptomsCards from '../../components/Layout/SymptomsCards'
+import SymptomsCarousel from '../../components/Layout/SymptomsCarousel'
 
 const TakeCare = () => {
   return (
     <>
     <h1>Take Care</h1>
-    <SymptomsCards/>
+    <SymptomsCarousel />
     </>
   );
 }
