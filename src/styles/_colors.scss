@@ -1,11 +1,13 @@
 html {
-  --base-color-background: #282c34;
-  --base-color-link: #61dafb;
-  --base-color: white;
+	--base-color-background: #282c34;
+	--base-color-link: #61dafb;
+	--base-color: white;
+	--base-color-button: #929292;
 }
 
 html[data-theme="dark"] {
-  --base-color-background: white;
-  --base-color-link: #fe016c;
-  --base-color: #232323;
+	--base-color-background: white;
+	--base-color-link: #fe016c;
+	--base-color: #232323;
+	--base-color-button: #273239;
 }
