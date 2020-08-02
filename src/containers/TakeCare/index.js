@@ -1,5 +1,5 @@
 import React from 'react';
-import SymptomsCarousel from '../../components/Layout/SymptomsCarousel'
+import SymptomsCarousel from '../../components/SymptomsCarousel'
 
 const TakeCare = () => {
   return (
