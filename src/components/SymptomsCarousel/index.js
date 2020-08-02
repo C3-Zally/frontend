@@ -41,17 +41,19 @@ const SymptomsCarousel = () => {
 
     return (
         <React.Fragment>
-          <section className='Carousel'>
-            <h4 className='Carousel__title'>Symptoms</h4>
-            <div className='Carousel__container'>
-            {
+          <section className='Main'>
+                <h4 className='Main__title'>Symptoms</h4>
+            <div className='Carousel'>
+                <div className='Carousel__container'>
+                {
                 symptoms.map(symptom =>
                  <SymptomsCards
                 title={symptom.title}
                 image={symptom.image}
                 key={symptom.title}/>)
-            }
-          </div>
+                }
+                </div>
+            </div>
         </section>
         </React.Fragment>
     )

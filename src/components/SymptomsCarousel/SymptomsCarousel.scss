@@ -1,18 +1,30 @@
-.Carousel{
+.Main {
+  width: 100%;
+  &__title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #929292;
+    padding-left: 10px;
+  }
+}
+.Carousel {
   overflow: scroll;
-  position: relative;
-  padding: 10px;
-
+  text-align: center;
   &__title {
     font-size: 20px;
+    font-weight: 900;
+    text-align: center;
     color: #22577A;
-    padding: 0px 10px;
   }
   &__container {
     white-space: nowrap;
-
   }
 }
 
-
+@media only screen and (min-width: 1200px) {
+  .Main__title {
+    
+    padding-left: 60px;
+  }
+}
 

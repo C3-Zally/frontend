@@ -5,7 +5,6 @@
     overflow: hidden;
     margin: 0px 10px;
     display: inline-block;
-    border: 1px solid lightgrey;
     &--image {
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
       transition: 0.3s;
@@ -20,8 +19,8 @@
   }
   .Carousel__information {
     padding: 2px 16px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border: 1px solid lightgrey;
+    border-radius: 5.45625px;
   }
-  .Carousel__title {
-    font-size: 20px;
-    color: #22577A;
-  }
+
