@@ -1,12 +1,11 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from '../containers/Home';
 import Global from '../containers/Global';
 import Country from '../containers/Country';
 import TakeCare from '../containers/TakeCare';
 import Error404 from '../containers/Error404';
 import Layout from '../components/Layout';
-
 const App = () => (
   <Router>
     <Layout>
@@ -19,6 +18,6 @@ const App = () => (
       </Switch>
     </Layout>
   </Router>
-)
+);
 
 export default App;
