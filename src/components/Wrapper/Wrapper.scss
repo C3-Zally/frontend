@@ -1,0 +1,13 @@
+@import "../../styles/icons";
+@import "../../styles/colors";
+
+.Wrapper {
+  display: grid;
+  grid-template: 1fr / auto 1fr;
+  transition: 0.3s ease;
+
+  &__content {
+    height: 200vh;
+    padding: 0 22px;
+  }
+}
