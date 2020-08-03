@@ -1,0 +1,45 @@
+.increment-percentage {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+
+	&.ipMain {
+		justify-self: end;
+		padding-right: 10px;
+
+		@media screen and (min-width: 600px) {
+			grid-column: 1 / 2;
+			grid-row: 7 / 8;
+		}
+
+		@media screen and (min-width: 870px) {
+			grid-column: 5 / 6;
+			grid-row: 4 / 5;
+			justify-self: center;
+		}
+	}
+
+	&__value {
+		font-weight: 700;
+
+		&--color-confirmed {
+			color: #cf5300;
+		}
+
+		&--color-deaths {
+			color: #554b86;
+		}
+	}
+
+	&__icon {
+		font-size: 1.5rem;
+
+		&--green {
+			color: #28d7a6;
+		}
+
+		&--red {
+			color: #df0a56;
+		}
+	}
+}

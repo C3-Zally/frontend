@@ -1,0 +1,137 @@
+.data-card {
+	position: relative;
+	width: 233px;
+	height: 95px;
+	padding: 1rem 0.75rem 0 1.6rem;
+	overflow: hidden;
+	border-radius: 9px;
+	box-shadow: 0 6px 9px rgba(0, 0, 0, 0.1);
+
+	&:before {
+		content: "";
+		width: 9px;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.name {
+		margin: 0;
+		font-size: 1.125rem;
+		font-weight: 900;
+	}
+
+	.value {
+		margin: 0;
+		font-size: 2.625rem;
+		font-weight: 900;
+	}
+
+	.flex-container {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&.dataCardRecovered {
+		grid-column: 1 / -1;
+		grid-row: 3 / 5;
+		background-color: #e6fff8;
+		transform: scale(1.8);
+		width: 160px;
+		border-radius: 6px;
+
+		&:before {
+			background-color: #28d7a6;
+			width: 6px;
+		}
+
+		.name,
+		.value {
+			color: #28d7a6;
+		}
+	}
+
+	&.dataCardConfirmed {
+		grid-column: 1 / -1;
+		grid-row: 6 / 8;
+		background-color: #fff7f2;
+
+		&:before {
+			background-color: #cf5300;
+		}
+
+		.name,
+		.value {
+			color: #cf5300;
+		}
+	}
+
+	&.dataCardDeaths {
+		grid-column: 1 / -1;
+		grid-row: 8 / -1;
+		background-color: #eeecf9;
+
+		&:before {
+			background-color: #554b86;
+		}
+
+		.name,
+		.value {
+			color: #554b86;
+		}
+	}
+
+	@media screen and (min-width: 500px) {
+		&.dataCardConfirmed {
+			grid-column: 1 / 2;
+			align-self: start;
+		}
+
+		&.dataCardDeaths {
+			grid-column: 2 / -1;
+			grid-row: 6 / 8;
+			align-self: start;
+		}
+	}
+
+	@media screen and (min-width: 600px) {
+		&.dataCardRecovered {
+			grid-column: 1 / 2;
+			grid-row: 4 / 7;
+			width: 50%;
+		}
+
+		&.dataCardConfirmed {
+			grid-column: 2 / -1;
+			grid-row: 4 / 6;
+			align-self: center;
+		}
+
+		&.dataCardDeaths {
+			grid-column: 2 / -1;
+			grid-row: 6 / 8;
+			align-self: center;
+		}
+	}
+
+	@media screen and (min-width: 870px) {
+		&.dataCardRecovered {
+			grid-column: 3 / 6;
+			grid-row: 2 / 4;
+		}
+
+		&.dataCardConfirmed {
+			grid-column: 6 / 7;
+			grid-row: 2 / 3;
+			margin-top: 11px;
+		}
+		&.dataCardDeaths {
+			grid-column: 6 / 7;
+			grid-row: 3 / 5;
+			margin-top: 11px;
+		}
+	}
+}
