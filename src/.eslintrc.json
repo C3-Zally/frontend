@@ -13,16 +13,7 @@
   "plugins": [],
   // add your custom rules here
   "rules": {
-    "prettier/prettier": [
-      "error",
-      {
-        "printWidth": 80,
-        "trailingComma": "es5",
-        "semi": true,
-        "jsxSingleQuote": true,
-        "singleQuote": true
-      }
-    ],
+    "prettier/prettier": ["error"],
     "react/prop-types": 1
   }
 }
