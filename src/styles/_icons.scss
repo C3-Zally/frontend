@@ -1,12 +1,12 @@
 @font-face {
-  font-family: "hopeTrakerIcons";
-  src: url("../assets/fonts/hopeTrakerIcons.eot?h9x9zw");
-  src: url("../assets/fonts/hopeTrakerIcons.eot?h9x9zw#iefix")
-      format("embedded-opentype"),
-    url("../assets/fonts/hopeTrakerIcons.ttf?h9x9zw") format("truetype"),
-    url("../assets/fonts/hopeTrakerIcons.woff?h9x9zw") format("woff"),
-    url("../assets/fonts/hopeTrakerIcons.svg?h9x9zw#hopeTrakerIcons")
-      format("svg");
+  font-family: 'hopeTrakerIcons';
+  src: url('../assets/fonts/hopeTrakerIcons.eot?h9x9zw');
+  src: url('../assets/fonts/hopeTrakerIcons.eot?h9x9zw#iefix')
+      format('embedded-opentype'),
+    url('../assets/fonts/hopeTrakerIcons.ttf?h9x9zw') format('truetype'),
+    url('../assets/fonts/hopeTrakerIcons.woff?h9x9zw') format('woff'),
+    url('../assets/fonts/hopeTrakerIcons.svg?h9x9zw#hopeTrakerIcons')
+      format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -14,7 +14,7 @@
 
 i {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "hopeTrakerIcons" !important;
+  font-family: 'hopeTrakerIcons' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -28,44 +28,44 @@ i {
 }
 
 .icon__arrow-narrow--left:before {
-  content: "\e900";
+  content: '\e900';
 }
 .icon__arrow-narrow--right:before {
-  content: "\e901";
+  content: '\e901';
 }
 .icon__chevrons--down:before {
-  content: "\e902";
+  content: '\e902';
 }
 .icon__chevrons--up:before {
-  content: "\e903";
+  content: '\e903';
 }
 .icon__close:before {
-  content: "\e904";
+  content: '\e904';
 }
 .icon__file-download:before {
-  content: "\e905";
+  content: '\e905';
 }
 .icon__home:before {
-  content: "\e906";
+  content: '\e906';
 }
 .icon__info:before {
-  content: "\e907";
+  content: '\e907';
 }
 .icon__medical-cross:before {
-  content: "\e908";
+  content: '\e908';
 }
 .icon__moon:before {
-  content: "\e909";
+  content: '\e909';
 }
 .icon__search:before {
-  content: "\e90a";
+  content: '\e90a';
 }
 .icon__sun:before {
-  content: "\e90b";
+  content: '\e90b';
 }
 .icon__world:before {
-  content: "\e90c";
+  content: '\e90c';
 }
 .icon__brand:before {
-  content: "\e90d";
+  content: '\e90d';
 }
