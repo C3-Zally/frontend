@@ -9,8 +9,8 @@ const TopBar = () => {
     <div className='TopBar'>
       <SearchCountryBar />
       <div className='TopBar__options'>
-        <ThemeChanger />
         <OptionButton />
+        <ThemeChanger />
       </div>
     </div>
   );
