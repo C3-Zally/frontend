@@ -5,11 +5,11 @@ const CountryItem = ({ country }) => {
   return (
     <div className='country-item'>
       <img
-        className='country--flag'
+        className='country-item__flag'
         src={country.flag}
         alt='country flag'
       ></img>
-      <span className='country--name'>{country.name}</span>
+      <span className='country-item__name'>{country.name}</span>
     </div>
   );
 };
