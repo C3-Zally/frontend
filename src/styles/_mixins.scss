@@ -1,0 +1,39 @@
+// Shadows
+%shadow-banners {
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+%shadow-cards {
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+// Box container
+%banners {
+	overflow: hidden;
+	background-color: var(--base-color-background);
+	border-radius: 15px;
+	@extend %shadow;
+}
+
+// Titles with info icon
+%title {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+// Round buttons layout
+%button {
+	width: 32px;
+	height: 32px;
+	border-radius: 31px;
+	background-color: var(--base-color-button);
+	@include shadow;
+}
+
+// Symptoms card
+%symptomsCard {
+	width: 202px;
+	height: 291px;
+	@extend %box;
+}

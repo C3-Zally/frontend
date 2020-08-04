@@ -9,5 +9,7 @@ const TakeCare = () => {
     </>
   );
 }
+=======
+};
 
 export default TakeCare;
