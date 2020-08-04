@@ -1,6 +1,7 @@
 import React from 'react';
 import SearchCountryBar from '../../components/SearchCountryBar';
 import ThemeChanger from '../ThemeChanger';
+import OptionButton from '../OptionButton';
 import './TopBar.scss';
 
 const TopBar = () => {
@@ -9,7 +10,7 @@ const TopBar = () => {
       <SearchCountryBar />
       <div className='TopBar__options'>
         <ThemeChanger />
-        <ThemeChanger />
+        <OptionButton />
       </div>
     </div>
   );

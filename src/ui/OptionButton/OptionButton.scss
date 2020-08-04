@@ -1,0 +1,18 @@
+.OptionButton {
+  display: flex;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: var(--base-color-button);
+  color: white;
+  border: var(--base-color-button);
+  border-radius: 50%;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  &:active {
+    background-color: var(--blue);
+    transform: translateY(1px);
+  }
+}
