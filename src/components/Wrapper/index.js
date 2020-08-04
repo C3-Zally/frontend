@@ -1,6 +1,7 @@
 import React from 'react';
 import './Wrapper.scss';
 import NavBar from '../NavBar';
+import TopBar from '../../ui/TopBar';
 
 const Wrapper = ({ children }) => {
   const navBarLinks = [
@@ -11,7 +12,10 @@ const Wrapper = ({ children }) => {
   return (
     <main className='Wrapper'>
       <NavBar links={navBarLinks} />
-      <section className='Wrapper__content'>{children}</section>
+      <section className='Wrapper__content'>
+        <TopBar></TopBar>
+        {children}
+      </section>
     </main>
   );
 };

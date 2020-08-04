@@ -1,0 +1,10 @@
+.TopBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  &__options {
+    display: flex;
+    align-items: center;
+  }
+}
