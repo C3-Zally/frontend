@@ -1,0 +1,96 @@
+.NavBar {
+  --blue: #0096ca;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  max-width: 235px;
+  padding: 16px 16px 16px 32px;
+  background-color: var(--blue);
+  color: white;
+  box-sizing: border-box;
+  transition: 1s ease;
+  border-radius: 0 15px 15px 0;
+  overflow: hidden;
+
+  i {
+    font-size: 20px;
+  }
+
+  &__trigger {
+    text-align: right;
+    cursor: pointer;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 58px;
+    width: 200px;
+    max-width: 100%;
+    background: {
+      image: url(../../assets/logo.svg);
+      repeat: no-repeat;
+      position: center;
+      size: contain;
+    }
+    transition: 1s 0.3s ease;
+  }
+
+  &__list {
+    margin: 48px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    margin: 8px 0;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    text-decoration: none;
+
+    i {
+      margin-right: 0.5rem;
+    }
+    span {
+      opacity: 0;
+      animation: fadeIn 1s 0.5s ease forwards;
+    }
+  }
+
+  &.isContracted {
+    width: 50px;
+    padding: 8px;
+
+    & .NavBar__logo {
+      width: 50px;
+      background: {
+        image: url(../../assets/logo-icon.svg);
+        repeat: no-repeat;
+        position: center;
+      }
+    }
+
+    & .NavBar__link {
+      justify-content: center;
+      i {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
