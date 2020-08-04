@@ -1,0 +1,35 @@
+// Shadow
+@mixin shadow {
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+// Box container
+@mixin box {
+	overflow: hidden;
+	background-color: var(--base-color-background);
+	border-radius: 15px;
+	@include shadow;
+}
+
+// Titles
+@mixin title {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+// Round buttons layout
+@mixin button {
+	width: 32px;
+	height: 32px;
+	border-radius: 31px;
+	background-color: var(--base-color-button);
+	@include shadow;
+}
+
+// Symptoms card
+@mixin symptomsCard {
+	width: 202px;
+	height: 291px;
+	@include box;
+}
