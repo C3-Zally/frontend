@@ -1,25 +1,29 @@
-// Shadow
-@mixin shadow {
+// Shadows
+%shadow-banners {
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+%shadow-cards {
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 // Box container
-@mixin box {
+%banners {
 	overflow: hidden;
 	background-color: var(--base-color-background);
 	border-radius: 15px;
-	@include shadow;
+	@extend %shadow;
 }
 
-// Titles
-@mixin title {
+// Titles with info icon
+%title {
 	display: flex;
 	flex-wrap: nowrap;
 	align-items: center;
 }
 
 // Round buttons layout
-@mixin button {
+%button {
 	width: 32px;
 	height: 32px;
 	border-radius: 31px;
@@ -28,8 +32,8 @@
 }
 
 // Symptoms card
-@mixin symptomsCard {
+%symptomsCard {
 	width: 202px;
 	height: 291px;
-	@include box;
+	@extend %box;
 }
