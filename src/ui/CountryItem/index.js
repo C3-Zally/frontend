@@ -8,7 +8,7 @@ const CountryItem = ({ country }) => {
         className='country-item__flag'
         src={country.flag}
         alt='country flag'
-      ></img>
+      />
       <span className='country-item__name'>{country.name}</span>
     </div>
   );
