@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import OptionButton from '../OptionButton';
 const ThemeChanger = () => {
   const [themeState, setThemeState] = useState(false);
 
@@ -19,11 +19,16 @@ const ThemeChanger = () => {
       return document.documentElement.setAttribute('data-theme', 'dark');
   });
   return (
-    <div>
-      <button onClick={handleChange}>
-        {themeState ? 'Light Mode' : 'Dark Mode'}
-      </button>
-    </div>
+    <OptionButton
+      handlerClick={handleChange}
+      label={
+        themeState ? (
+          <i className='icon__moon'></i>
+        ) : (
+          <i className='icon__sun'></i>
+        )
+      }
+    />
   );
 };
 

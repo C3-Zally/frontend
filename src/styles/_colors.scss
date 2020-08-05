@@ -22,6 +22,7 @@ html {
   --base-color-link: var(--lightBlue);
   --base-color: var(--black);
   --base-color-button: var(--darkGrey);
+  --base-color-grey: var(--lightGrey);
 }
 
 html[data-theme='dark'] {
@@ -29,4 +30,5 @@ html[data-theme='dark'] {
   --base-color-link: var(--red);
   --base-color: var(--lightBackground);
   --base-color-button: var(--darkCardsBackground);
+  --base-color-grey: var(--darkGrey);
 }
