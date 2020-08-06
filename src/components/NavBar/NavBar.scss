@@ -1,5 +1,6 @@
+@import '../../styles/mixins';
+
 .NavBar {
-  --blue: #0096ca;
   position: sticky;
   top: 0;
   left: 0;
@@ -8,14 +9,14 @@
   max-width: 235px;
   padding: 16px 16px 16px 32px;
   background-color: var(--blue);
-  color: white;
   box-sizing: border-box;
   transition: 1s ease;
   border-radius: 0 15px 15px 0;
   overflow: hidden;
+  @include font(default, white);
 
   i {
-    font-size: 20px;
+    @include font(icon, white);
   }
 
   &__trigger {
@@ -52,11 +53,12 @@
   &__link {
     display: flex;
     justify-content: flex-start;
-    color: white;
     text-decoration: none;
+    @include font(boldText, white);
 
     i {
       margin-right: 0.5rem;
+      @include font(icon, white);
     }
     span {
       opacity: 0;
