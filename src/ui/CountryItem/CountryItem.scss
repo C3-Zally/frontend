@@ -3,11 +3,10 @@
 .country-item {
   background-color: var(--base-color-background);
   border: 1px solid var(--base-color-background);
-  margin: 4px 0px 4px 0px;
+  margin: 2px 0px 2px 0px;
   display: flex;
   align-items: center;
   height: 60px;
-  border-radius: 5px;
   box-shadow: 0px 7px 14px 3px rgba(153, 153, 153, 0.4);
   &:hover {
     cursor: pointer;
