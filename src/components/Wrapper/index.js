@@ -13,7 +13,7 @@ const Wrapper = ({ children }) => {
     <main className='Wrapper'>
       <NavBar links={navBarLinks} />
       <section className='Wrapper__content'>
-        <TopBar></TopBar>
+        <TopBar/>
         {children}
       </section>
     </main>
