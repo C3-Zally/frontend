@@ -3,7 +3,7 @@ import MainBanner from '../../components/MainBanner'
 
 const Home = () => (
   <MainBanner
-    alpha2Code="MX"
+    alpha2Code="NZ"
     recoveredValue="209833"
     incrementPercentageValue="23"
     incrementPercentageIcon="up"

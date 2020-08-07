@@ -31,14 +31,12 @@ const MainBanner = (props) => {
 		const countryImageContainer = document.querySelector('.country-image')
 		fetch(`${API}${countryReference.name}`)
 			.then(res => res.json())
-			.then(data => setCountry(data.results[randomImage].urls.small))
+			.then(data => setCountry(data.results[randomImage].urls.regular))
 			.then(countryImageContainer.style.backgroundImage = `url(${country})`)
 	}, [country, countryReference.name])
 
 	return (
 		<React.Fragment>
-			<h2>Overview</h2>
-
 			<section className="main-banner">
 				<div className="country-image"></div>
 
