@@ -1,4 +1,6 @@
 @import "../../styles/global";
+@import "../../styles/colors";
+@import "../../styles/mixins";
 
 .main-banner {
 	display: grid;
@@ -8,10 +10,7 @@
 	min-width: 310px;
 	max-width: 1140px;
 	margin: 0 10px;
-	overflow: hidden;
-	background-color: #fff;
-	border-radius: 15px;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	@extend %banners;
 
 	.menu {
 		display: flex;
@@ -24,13 +23,20 @@
 		padding: 3px 10px 0;
 		list-style: none;
 
-		&__link {
+		&__button {
 			padding-right: 10px;
 			font-size: 0.75rem;
 			font-weight: 700;
 			text-decoration: none;
-			color: #222222;
+			color: var(--base-color);
+			background-color: transparent;
+			border: none;
+			cursor: pointer;
 			opacity: 0.5;
+
+			&:hover {
+				text-decoration: underline;
+			}
 
 			&--active {
 				opacity: 1;
@@ -60,13 +66,14 @@
 
 		&__flag {
 			height: 26px;
-			clip-path: circle(13px at 24px 13px);
+			clip-path: circle(13px at calc(100% / 2) 13px);
 		}
 
 		&__name {
-			margin: 0;
+			margin-left: 5px;
 			font-size: 1.5rem;
 			font-weight: 900;
+			text-shadow: 0 0 4px rgba(255, 255, 255, 0.65);
 		}
 	}
 

@@ -1,3 +1,6 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+
 .data-card {
 	position: relative;
 	width: 233px;
@@ -5,7 +8,7 @@
 	padding: 1rem 0.75rem 0 1.6rem;
 	overflow: hidden;
 	border-radius: 9px;
-	box-shadow: 0 6px 9px rgba(0, 0, 0, 0.1);
+	@extend %shadow-cards;
 
 	&:before {
 		content: "";
@@ -26,6 +29,10 @@
 		margin: 0;
 		font-size: 2.625rem;
 		font-weight: 900;
+
+		&.small {
+			font-size: 2rem;
+		}
 	}
 
 	.flex-container {
@@ -38,49 +45,49 @@
 	&.dataCardRecovered {
 		grid-column: 1 / -1;
 		grid-row: 3 / 5;
-		background-color: #e6fff8;
+		background-color: var(--lightGreen);
 		transform: scale(1.8);
 		width: 160px;
 		border-radius: 6px;
 
 		&:before {
-			background-color: #28d7a6;
+			background-color: var(--green);
 			width: 6px;
 		}
 
 		.name,
 		.value {
-			color: #28d7a6;
+			color: var(--green);
 		}
 	}
 
 	&.dataCardConfirmed {
 		grid-column: 1 / -1;
 		grid-row: 6 / 8;
-		background-color: #fff7f2;
+		background-color: var(--lightOrange);
 
 		&:before {
-			background-color: #cf5300;
+			background-color: var(--orange);
 		}
 
 		.name,
 		.value {
-			color: #cf5300;
+			color: var(--orange);
 		}
 	}
 
 	&.dataCardDeaths {
 		grid-column: 1 / -1;
 		grid-row: 8 / -1;
-		background-color: #eeecf9;
+		background-color: var(--lightPurple);
 
 		&:before {
-			background-color: #554b86;
+			background-color: var(--purple);
 		}
 
 		.name,
 		.value {
-			color: #554b86;
+			color: var(--purple);
 		}
 	}
 

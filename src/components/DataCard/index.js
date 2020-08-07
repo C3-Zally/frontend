@@ -1,6 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
 import { IncrementPercentage } from '../IncrementPercentage'
+import numberConverter from '../../utility/numberConverter'
 
 import './DataCard.scss'
 
@@ -15,30 +16,32 @@ export const DataCard = (props) => {
 		ipValue,
 		colorConfirmed,
 		colorDeaths,
-		incrementPercentage__iconGreen,
-		incrementPercentage__iconRed,
-		icon__chevronsUp,
-		icon__chevronsDown,
+		incrementPercentageIcon,
+		incrementPercentageIconColor,
 	} = props
+
 	const dataCardClass = classNames('data-card', {
 		dataCardRecovered,
 		dataCardConfirmed,
 		dataCardDeaths,
 	})
+
+	let valueClass = 'value'
+
+	if (value.length > 5) {valueClass += ' small'}
+
 	return (
 		<div className={dataCardClass}>
 			<p className="name">{name}</p>
 			<div className="flex-container">
-				<p className="value">{value}</p>
+				<p className={valueClass}>{numberConverter(value)}</p>
 				{isNotRecover &&
 					<IncrementPercentage
 						ipValue={ipValue}
 						colorConfirmed={colorConfirmed}
 						colorDeaths={colorDeaths}
-						incrementPercentage__iconGreen={incrementPercentage__iconGreen}
-						incrementPercentage__iconRed={incrementPercentage__iconRed}
-						icon__chevronsUp={icon__chevronsUp}
-						icon__chevronsDown={icon__chevronsDown}
+						incrementPercentageIcon={incrementPercentageIcon}
+						incrementPercentageIconColor={incrementPercentageIconColor}
 					/>
 				}
 			</div>

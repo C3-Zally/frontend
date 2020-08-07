@@ -9,22 +9,21 @@ export const IncrementPercentage = (props) => {
 		ipValue,
 		colorConfirmed,
 		colorDeaths,
-		incrementPercentage__iconRed,
-		incrementPercentage__iconGreen,
-		icon__chevronsUp,
-		icon__chevronsDown,
+		incrementPercentageIcon,
+		incrementPercentageIconColor,
 	} = props
 	const ipClass = classNames('increment-percentage', { ipMain })
 	const valueClass = classNames('increment-percentage__value', {
 		'increment-percentage__value--color-confirmed': colorConfirmed,
 		'increment-percentage__value--color-deaths': colorDeaths,
 	})
-	const chevronClass = classNames('increment-percentage__icon', {
-		'increment-percentage__icon--red': incrementPercentage__iconRed,
-		'icon__chevrons--up': icon__chevronsUp,
-		'increment-percentage__icon--green': incrementPercentage__iconGreen,
-		'icon__chevrons--down': icon__chevronsDown,
-	})
+	let chevronClass = 'increment-percentage__icon'
+	if (incrementPercentageIcon === "up") chevronClass += ' icon__chevrons--up'
+	else if (incrementPercentageIcon === "down") chevronClass += ' icon__chevrons--down'
+
+	if (incrementPercentageIconColor === "red") chevronClass += ' increment-percentage__icon--red'
+	else if (incrementPercentageIconColor === "green") chevronClass += ' increment-percentage__icon--green'
+
 	return (
 		<div className={ipClass}>
 			<div className={valueClass}>{ipValue}%</div>

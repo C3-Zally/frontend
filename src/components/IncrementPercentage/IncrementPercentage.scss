@@ -1,3 +1,5 @@
+@use '../../styles/colors';
+@use '../../styles/mixins';
 .increment-percentage {
 	display: flex;
 	flex-wrap: nowrap;
@@ -21,13 +23,14 @@
 
 	&__value {
 		font-weight: 700;
+		color: var(--base-color);
 
 		&--color-confirmed {
-			color: #cf5300;
+			color: var(--orange);
 		}
 
 		&--color-deaths {
-			color: #554b86;
+			color: var(--purple);
 		}
 	}
 
@@ -35,11 +38,11 @@
 		font-size: 1.5rem;
 
 		&--green {
-			color: #28d7a6;
+			color: var(--green);
 		}
 
 		&--red {
-			color: #df0a56;
+			color: var(--red);
 		}
 	}
 }
