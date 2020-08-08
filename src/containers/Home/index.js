@@ -1,22 +1,8 @@
 import React from 'react'
 import MainBanner from '../../components/MainBanner'
 
-const Home = () => (
-  <MainBanner
-    alpha2Code="NZ"
-    recoveredValue="209833"
-    incrementPercentageValue="23"
-    incrementPercentageIcon="up"
-    incrementPercentageIconColor="green"
-    confirmedValue="19239096"
-    confirmedPercentage="14"
-    confirmedIcon="up"
-    confirmedIconColor="red"
-    deathsValue="38245"
-    deathsPercentage="8"
-    deathsIcon="down"
-    deathsIconColor="green"
-  />
-)
+const Home = () => {
+  return <h1>Home</h1>;
+};
 
 export default Home;
