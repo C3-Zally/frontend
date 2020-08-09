@@ -18,6 +18,7 @@
 }
 
 html {
+  --main-color-background: var(--lightBackground);
   --base-color-background: white;
   --base-color-link: var(--lightBlue);
   --base-color: var(--black);
@@ -26,6 +27,7 @@ html {
 }
 
 html[data-theme='dark'] {
+  --main-color-background: var(--black);
   --base-color-background: var(--darkCardsBackground);
   --base-color-link: var(--red);
   --base-color: var(--lightBackground);
