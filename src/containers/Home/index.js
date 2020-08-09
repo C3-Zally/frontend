@@ -2,7 +2,7 @@ import React from 'react';
 import MainBanner from '../../components/MainBanner';
 const Home = () => (
   <MainBanner
-    alpha2Code='CO'
+    alpha2Code='MX'
     recoveredValue='209833'
     incrementPercentageValue='23'
     incrementPercentageIcon='up'
