@@ -1,48 +1,48 @@
 @use '../../styles/colors';
 @use '../../styles/mixins';
 .increment-percentage {
-	display: flex;
-	flex-wrap: nowrap;
-	align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
 
-	&.ipMain {
-		justify-self: end;
-		padding-right: 10px;
+  &.ipMain {
+    justify-self: end;
+    padding-right: 10px;
 
-		@media screen and (min-width: 600px) {
-			grid-column: 1 / 2;
-			grid-row: 7 / 8;
-		}
+    @media screen and (min-width: 720px) {
+      grid-column: 1 / 2;
+      grid-row: 7 / 8;
+    }
 
-		@media screen and (min-width: 870px) {
-			grid-column: 5 / 6;
-			grid-row: 4 / 5;
-			justify-self: center;
-		}
-	}
+    @media screen and (min-width: calc(870px + 50px + 44px)) {
+      grid-column: 5 / 6;
+      grid-row: 4 / 5;
+      justify-self: center;
+    }
+  }
 
-	&__value {
-		font-weight: 700;
-		color: var(--base-color);
+  &__value {
+    font-weight: 700;
+    color: var(--base-color);
 
-		&--color-confirmed {
-			color: var(--orange);
-		}
+    &--color-confirmed {
+      color: var(--orange);
+    }
 
-		&--color-deaths {
-			color: var(--purple);
-		}
-	}
+    &--color-deaths {
+      color: var(--purple);
+    }
+  }
 
-	&__icon {
-		font-size: 1.5rem;
+  &__icon {
+    font-size: 1.5rem;
 
-		&--green {
-			color: var(--green);
-		}
+    &--green {
+      color: var(--green);
+    }
 
-		&--red {
-			color: var(--red);
-		}
-	}
+    &--red {
+      color: var(--red);
+    }
+  }
 }

@@ -3,10 +3,9 @@ import Countries from '../../utility/countries';
 import { IncrementPercentage } from '../IncrementPercentage';
 import { DataCard } from '../DataCard';
 import { useCountryImage } from '../../hooks/useCountryImage';
+import { Loader } from '../Loader';
 
 import './MainBanner.scss';
-
-// const randomImage = Math.floor(Math.random() * 10);
 
 const MainBanner = (props) => {
   const {
@@ -24,24 +23,19 @@ const MainBanner = (props) => {
     deathsIcon,
     deathsIconColor,
   } = props;
-  // const [country, setCountry] = useState('');
-  /* const API =
-    'https://api.unsplash.com/search/photos?client_id=rTLPnTqzq-rK3TnatKGFvmVeFGaZeYToaKUyzwcJOiA&query='; */
+
   const countryReference = Countries.getByAlphaCode(alpha2Code);
 
-  /* useEffect(() => {
-    const countryImageContainer = document.querySelector('.country-image');
-    fetch(`${API}${countryReference.name}`)
-      .then((res) => res.json())
-      .then((data) => setCountry(data.results[randomImage].urls.regular))
-      .then((countryImageContainer.style.backgroundImage = `url(${country})`));
-  }, []); */
   const { countryImage, error, isLoading } = useCountryImage(alpha2Code);
   const ImageCountry = ({ background }) => {
     let styles = {
       backgroundImage: `url(${background})`,
     };
-    return <div className='country-image' style={styles}></div>;
+    return (
+      <div className='country-image' style={styles}>
+        {isLoading && <Loader />}
+      </div>
+    );
   };
 
   return (
@@ -60,7 +54,7 @@ const MainBanner = (props) => {
         <div className='country'>
           <img
             src={countryReference.flag}
-            alt={countryReference.name}
+            alt={countryReference.nativeName}
             className='country__flag'
           />
           <h4 className='country__name'>{countryReference.name}</h4>
