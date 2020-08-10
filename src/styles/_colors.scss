@@ -9,7 +9,6 @@
   --lightPurple: #eeecf9;
   --red: #df0656;
   --lightRed: #fff8fa;
-
   --black: #222;
   --darkGrey: #929292;
   --lightGrey: #cbcbcb;
@@ -18,7 +17,7 @@
 }
 
 html {
-  --main-color-background: var(--lightBackground);
+  --main-color-bg: var(--lightBackground);
   --base-color-background: white;
   --base-color-link: var(--lightBlue);
   --base-color: var(--black);
@@ -27,7 +26,7 @@ html {
 }
 
 html[data-theme='dark'] {
-  --main-color-background: var(--black);
+  --main-color-bg: var(--black);
   --base-color-background: var(--darkCardsBackground);
   --base-color-link: var(--red);
   --base-color: var(--lightBackground);
