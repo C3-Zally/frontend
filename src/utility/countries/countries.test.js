@@ -24,4 +24,16 @@ describe('Utility Countries', () => {
     expect(countrie).toBeUndefined();
     expect(countrieCode).toBeUndefined();
   });
+  it('should return a array with MX item', () => {
+    const countries = Countries.filterCountriesByName('MexI');
+    expect(countries[0].name).toBe('Mexico');
+  });
+  it('should return a array with MX item with upercase', () => {
+    const countries = Countries.filterCountriesByName('MEXI');
+    expect(countries[0].name).toBe('Mexico');
+  });
+  it('should return a array with MX item with upercase', () => {
+    const countries = Countries.filterCountriesByName('mexi');
+    expect(countries[0].name).toBe('Mexico');
+  });
 });

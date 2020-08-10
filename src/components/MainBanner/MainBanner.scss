@@ -100,7 +100,7 @@
     }
   }
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 720px) {
     grid-template-rows: 30px 50px 200px 50px 50px 80px 45px;
 
     .menu {
@@ -117,7 +117,7 @@
     }
   }
 
-  @media screen and (min-width: 870px) {
+  @media screen and (min-width: calc(870px + 50px + 44px)) {
     grid-template-columns: 165px 2fr 110px 235px 2fr 265px 1fr;
     grid-template-rows: 35px 110px 85px 30px 60px;
 
