@@ -26,10 +26,14 @@ const MainBanner = (props) => {
 
   const countryReference = Countries.getByAlphaCode(alpha2Code);
 
-  const { countryImage, error, isLoading } = useCountryImage(alpha2Code);
+  const { countryImage, error, isLoading } = useCountryImage(
+    countryReference.name
+  );
   const ImageCountry = ({ background }) => {
     let styles = {
-      backgroundImage: `url(${background})`,
+      backgroundImage: error
+        ? `url(${countryReference.flag})`
+        : `url(${background})`,
     };
     return (
       <div className='country-image' style={styles}>
