@@ -1,0 +1,31 @@
+.TakeCare {
+  &__main {
+    display: inline-block;
+    width: 100%;
+    border: solid 1px yellowgreen;
+    justify-content: center;
+  }
+  &__title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #929292;
+    padding-left: 60px;
+  }
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 10px;
+    border: solid 1px red;
+  }
+}
+
+// @media only screen and (max-width: 1320px) {
+//     .TakeCare__container {
+//       width: 50%;
+//       flex-direction: column;
+//       background-color: blue;
+//     }
+//   }
