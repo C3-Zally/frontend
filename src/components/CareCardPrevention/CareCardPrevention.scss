@@ -1,18 +1,18 @@
 .CareCardPrevention {
   &__container {
-    width: 35%;
+    // width: 30%;
     margin: 0;
-    border: solid 1px blue;
+    // border: solid 1px blue;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    vertical-align: middle;
+    // vertical-align: middle;
     text-align: center;
-    // max-width: 100%;
+    max-width: 100%;
     object-fit: cover;
     & img {
-      width: 80%;
+      min-width: 430px;
     }
   }
 
@@ -23,17 +23,19 @@
     height: 70px;
     line-height: 70px;
     // border: solid 1px red;
-    width: 80%;
+    min-width: 430px;
     border-radius: 5.45625px;
     margin: 0;
   }
 }
 
-// @media only screen and (max-width: 1320px) {
-//     .CareCardPrevention__container {
-//       width: 100%;
-//     }
-//     .CareCardPrevention__container img, .CareCardPrevention__title{
-//         width: 56%;
-//     }
-//   }
+@media only screen and (max-width: 600px) {
+  .CareCardPrevention__container img,
+  .CareCardPrevention__title {
+    min-width: 30vw;
+  }
+  // .CareCardPrevention__title{
+  //   min-width: 30vw;
+  //   font-size: 45px;
+  // }
+}
