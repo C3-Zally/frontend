@@ -1,0 +1,62 @@
+@import '../../styles/colors';
+@import '../../styles/mixins';
+
+.menu {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  margin-bottom: 8px;
+
+  li {
+    margin: 0 10px;
+
+    button {
+      font-family: 'Nunito', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--base-color);
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      outline: none;
+
+      &.inactive {
+        opacity: 0.5;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.progress-chart {
+  max-width: 1140px;
+
+  .recharts-responsive-container {
+    // width: calc(100% - 30px)!important;
+    // margin-left: 40px;
+    @extend %banners;
+    // overflow: visible;
+
+    .recharts-wrapper {
+      // width: calc(100% + 30px)!important;
+      // margin-left: -40px;
+
+      .recharts-text {
+        font-size: 0.75rem;
+        fill: var(--base-color);
+      }
+
+      .recharts-legend-item-text {
+        color: var(--base-color);
+      }
+
+      .recharts-brush {
+        width: 90% !important;
+        margin: 0 auto;
+      }
+    }
+  }
+}
