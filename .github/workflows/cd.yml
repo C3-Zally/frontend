@@ -5,9 +5,9 @@ name: CD
 on:
   push:
     branches: [master]
-  pull_request:
-    branches: [master]
-
+  release:
+    # Only use the types keyword to narrow down the activity types that will trigger your workflow.
+    types: [published]
 jobs:
   build:
     runs-on: ubuntu-latest
