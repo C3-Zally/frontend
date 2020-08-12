@@ -1,0 +1,144 @@
+@import '../../styles/colors';
+@import '../../styles/mixins';
+
+.data-card {
+  position: relative;
+  width: 233px;
+  height: 95px;
+  padding: 1rem 0.75rem 0 1.6rem;
+  overflow: hidden;
+  border-radius: 9px;
+  @extend %shadow-cards;
+
+  &:before {
+    content: '';
+    width: 9px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .name {
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 900;
+  }
+
+  .value {
+    margin: 0;
+    font-size: 2.625rem;
+    font-weight: 900;
+
+    &.small {
+      font-size: 2rem;
+    }
+  }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &.dataCardRecovered {
+    grid-column: 1 / -1;
+    grid-row: 3 / 5;
+    background-color: var(--lightGreen);
+    transform: scale(1.8);
+    width: 160px;
+    border-radius: 6px;
+
+    &:before {
+      background-color: var(--green);
+      width: 6px;
+    }
+
+    .name,
+    .value {
+      color: var(--green);
+    }
+  }
+
+  &.dataCardConfirmed {
+    grid-column: 1 / -1;
+    grid-row: 6 / 8;
+    background-color: var(--lightOrange);
+
+    &:before {
+      background-color: var(--orange);
+    }
+
+    .name,
+    .value {
+      color: var(--orange);
+    }
+  }
+
+  &.dataCardDeaths {
+    grid-column: 1 / -1;
+    grid-row: 8 / -1;
+    background-color: var(--lightPurple);
+
+    &:before {
+      background-color: var(--purple);
+    }
+
+    .name,
+    .value {
+      color: var(--purple);
+    }
+  }
+
+  @media screen and (min-width: 500px) {
+    &.dataCardConfirmed {
+      grid-column: 1 / 2;
+      align-self: start;
+    }
+
+    &.dataCardDeaths {
+      grid-column: 2 / -1;
+      grid-row: 6 / 8;
+      align-self: start;
+    }
+  }
+
+  @media screen and (min-width: 720px) {
+    &.dataCardRecovered {
+      grid-column: 1 / 2;
+      grid-row: 4 / 7;
+      width: 50%;
+    }
+
+    &.dataCardConfirmed {
+      grid-column: 2 / -1;
+      grid-row: 4 / 6;
+      align-self: center;
+    }
+
+    &.dataCardDeaths {
+      grid-column: 2 / -1;
+      grid-row: 6 / 8;
+      align-self: center;
+    }
+  }
+
+  @media screen and (min-width: calc(870px + 50px + 44px)) {
+    &.dataCardRecovered {
+      grid-column: 3 / 6;
+      grid-row: 2 / 4;
+    }
+
+    &.dataCardConfirmed {
+      grid-column: 6 / 7;
+      grid-row: 2 / 3;
+      margin-top: 11px;
+    }
+    &.dataCardDeaths {
+      grid-column: 6 / 7;
+      grid-row: 3 / 5;
+      margin-top: 11px;
+    }
+  }
+}
