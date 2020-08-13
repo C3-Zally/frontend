@@ -2,7 +2,7 @@
 @import '../../styles/mixins';
 
 .title {
-  margin-bottom: 7px;
+  margin: 20px 0 7px 10px;
   @extend %title;
 
   h2 {
