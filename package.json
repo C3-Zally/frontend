@@ -7,18 +7,21 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "classnames": "^2.2.6",
+    "gh-pages": "^3.1.0",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "recharts": "^1.8.5"
+    "recharts": "^1.8.5",
+    "react-scripts": "^3.4.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "pretty-quick": "pretty-quick"
+    "pretty-quick": "pretty-quick",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
@@ -47,5 +50,6 @@
     "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1",
     "react-router-dom": "^5.2.0"
-  }
+  },
+  "homepage": "https://c3-zally.github.io/frontend"
 }
