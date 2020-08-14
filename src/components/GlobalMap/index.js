@@ -9,7 +9,9 @@ const GlobalMap = ({ alpha2Code }) => {
 
   const filterMap = (item) => {
     if (item.properties.ISO_A2 === alpha2Code) {
-      return <Geography key={item.rsmKey} geography={item} />;
+      return (
+        <Geography key={item.rsmKey} geography={item} className='globalMap' />
+      );
     }
   };
   return (
