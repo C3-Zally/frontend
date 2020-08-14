@@ -1,31 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2cbac92078540c01b86c7b277abcc567",
+    "revision": "b0157b3d6df55efdd41021cb4f38de36",
     "url": "/frontend/index.html"
   },
   {
-    "revision": "94c5925a817e9b2ed831",
-    "url": "/frontend/static/css/main.4ee2694d.chunk.css"
+    "revision": "e16cbaa56dc0bb6dc437",
+    "url": "/frontend/static/css/main.0f3f4004.chunk.css"
   },
   {
-    "revision": "edf1b6fa62562704ff60",
-    "url": "/frontend/static/js/2.120e523d.chunk.js"
+    "revision": "51654c8891742764a690",
+    "url": "/frontend/static/js/2.283bf208.chunk.js"
   },
   {
     "revision": "ca3cfcda77dc9f4f71fda9fdfcf14fb0",
-    "url": "/frontend/static/js/2.120e523d.chunk.js.LICENSE.txt"
+    "url": "/frontend/static/js/2.283bf208.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "94c5925a817e9b2ed831",
-    "url": "/frontend/static/js/main.60085cb5.chunk.js"
+    "revision": "e16cbaa56dc0bb6dc437",
+    "url": "/frontend/static/js/main.83595f02.chunk.js"
   },
   {
     "revision": "3420dc51a5cd19929188",
     "url": "/frontend/static/js/runtime-main.fa598c00.js"
   },
   {
+    "revision": "03a21017403faa0cebbbbfa714d19154",
+    "url": "/frontend/static/media/avoid-crowds.03a21017.svg"
+  },
+  {
     "revision": "a70062c43ee51bd475d3f1cef1efe77d",
     "url": "/frontend/static/media/cough.a70062c4.svg"
+  },
+  {
+    "revision": "626d02315bdd40751e69bd976f8715f2",
+    "url": "/frontend/static/media/desinfection.626d0231.svg"
   },
   {
     "revision": "9d8201bb30ac01024b0c7bc341074834",
@@ -60,6 +68,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/frontend/static/media/logo.0645b7a7.svg"
   },
   {
+    "revision": "09710cdd9b3952694866be4a21b6b251",
+    "url": "/frontend/static/media/mask.09710cdd.svg"
+  },
+  {
+    "revision": "e8b6575df46396a83b55344c13bc3f4c",
+    "url": "/frontend/static/media/prevention.e8b6575d.svg"
+  },
+  {
     "revision": "1dc85f84dd8732f04d8704cc5de671bf",
     "url": "/frontend/static/media/runny-nose.1dc85f84.svg"
   },
@@ -68,7 +84,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/frontend/static/media/shortness-breath.6f8d6995.svg"
   },
   {
+    "revision": "5ebfe048d58ae90ebf9b90cfb23ebf35",
+    "url": "/frontend/static/media/soap.5ebfe048.svg"
+  },
+  {
+    "revision": "733f7ee70973a72a1c3c6f99458428c6",
+    "url": "/frontend/static/media/stay-at-home.733f7ee7.svg"
+  },
+  {
     "revision": "c1cac046093038a9e13f2e9896e7fdf5",
     "url": "/frontend/static/media/tiredness.c1cac046.svg"
+  },
+  {
+    "revision": "fecc90b5d676f48b6c498724abd0c1b8",
+    "url": "/frontend/static/media/wash-hand.fecc90b5.svg"
   }
 ]);

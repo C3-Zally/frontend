@@ -1,30 +1,37 @@
 {
   "files": {
-    "main.css": "/frontend/static/css/main.4ee2694d.chunk.css",
-    "main.js": "/frontend/static/js/main.60085cb5.chunk.js",
-    "main.js.map": "/frontend/static/js/main.60085cb5.chunk.js.map",
+    "main.css": "/frontend/static/css/main.0f3f4004.chunk.css",
+    "main.js": "/frontend/static/js/main.83595f02.chunk.js",
+    "main.js.map": "/frontend/static/js/main.83595f02.chunk.js.map",
     "runtime-main.js": "/frontend/static/js/runtime-main.fa598c00.js",
     "runtime-main.js.map": "/frontend/static/js/runtime-main.fa598c00.js.map",
-    "static/js/2.120e523d.chunk.js": "/frontend/static/js/2.120e523d.chunk.js",
-    "static/js/2.120e523d.chunk.js.map": "/frontend/static/js/2.120e523d.chunk.js.map",
+    "static/js/2.283bf208.chunk.js": "/frontend/static/js/2.283bf208.chunk.js",
+    "static/js/2.283bf208.chunk.js.map": "/frontend/static/js/2.283bf208.chunk.js.map",
     "index.html": "/frontend/index.html",
-    "precache-manifest.ace01829d924e8f10cffc721d4f54b5c.js": "/frontend/precache-manifest.ace01829d924e8f10cffc721d4f54b5c.js",
+    "precache-manifest.51dd09bf12284d439e3f270125001440.js": "/frontend/precache-manifest.51dd09bf12284d439e3f270125001440.js",
     "service-worker.js": "/frontend/service-worker.js",
-    "static/css/main.4ee2694d.chunk.css.map": "/frontend/static/css/main.4ee2694d.chunk.css.map",
-    "static/js/2.120e523d.chunk.js.LICENSE.txt": "/frontend/static/js/2.120e523d.chunk.js.LICENSE.txt",
+    "static/css/main.0f3f4004.chunk.css.map": "/frontend/static/css/main.0f3f4004.chunk.css.map",
+    "static/js/2.283bf208.chunk.js.LICENSE.txt": "/frontend/static/js/2.283bf208.chunk.js.LICENSE.txt",
+    "static/media/avoid-crowds.svg": "/frontend/static/media/avoid-crowds.03a21017.svg",
     "static/media/cough.svg": "/frontend/static/media/cough.a70062c4.svg",
+    "static/media/desinfection.svg": "/frontend/static/media/desinfection.626d0231.svg",
     "static/media/diarrhoea.svg": "/frontend/static/media/diarrhoea.9d8201bb.svg",
     "static/media/fever.svg": "/frontend/static/media/fever.9f314033.svg",
     "static/media/main.scss": "/frontend/static/media/hopeTrakerIcons.88741be6.woff",
     "static/media/NavBar.scss": "/frontend/static/media/logo.0645b7a7.svg",
+    "static/media/mask.svg": "/frontend/static/media/mask.09710cdd.svg",
+    "static/media/prevention.svg": "/frontend/static/media/prevention.e8b6575d.svg",
     "static/media/runny-nose.svg": "/frontend/static/media/runny-nose.1dc85f84.svg",
     "static/media/shortness-breath.svg": "/frontend/static/media/shortness-breath.6f8d6995.svg",
-    "static/media/tiredness.svg": "/frontend/static/media/tiredness.c1cac046.svg"
+    "static/media/soap.svg": "/frontend/static/media/soap.5ebfe048.svg",
+    "static/media/stay-at-home.svg": "/frontend/static/media/stay-at-home.733f7ee7.svg",
+    "static/media/tiredness.svg": "/frontend/static/media/tiredness.c1cac046.svg",
+    "static/media/wash-hand.svg": "/frontend/static/media/wash-hand.fecc90b5.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.fa598c00.js",
-    "static/js/2.120e523d.chunk.js",
-    "static/css/main.4ee2694d.chunk.css",
-    "static/js/main.60085cb5.chunk.js"
+    "static/js/2.283bf208.chunk.js",
+    "static/css/main.0f3f4004.chunk.css",
+    "static/js/main.83595f02.chunk.js"
   ]
 }
