@@ -1,0 +1,94 @@
+// Shadows
+%shadow-banners {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+%shadow-cards {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+// Banners container
+%banners {
+  overflow: hidden;
+  background-color: var(--base-color-background);
+  border-radius: 15px;
+  @extend %shadow-banners;
+}
+
+// Titles with info icon
+%title {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+// Round buttons layout
+%button {
+  width: 32px;
+  height: 32px;
+  border-radius: 31px;
+  background-color: var(--base-color-button);
+  @extend %shadow-banners;
+}
+
+// Symptoms card
+%symptomsCard {
+  width: 202px;
+  height: 291px;
+  @extend %banners;
+}
+
+%fontFamily {
+  font-family: 'Nunito', sans-serif;
+}
+
+// Font Handler
+/* Font types:
+  * H1 - H5
+  * smallTextBold
+  * smallTextLight
+  * boldText
+  * bigFact
+  * smallFact
+  * icon
+  * default
+*/
+@mixin font($type, $color: var(--black)) {
+  @extend %fontFamily;
+
+  @if $type == H1 {
+    font-size: 2.75rem;
+    font-weight: 900;
+  } @else if $type == H2 {
+    font-size: 2rem;
+    font-weight: 700;
+  } @else if $type == H3 {
+    font-size: 1.75rem;
+    font-weight: 900;
+  } @else if $type == H4 {
+    font-size: 1.5rem;
+    font-weight: 900;
+  } @else if $type == H5 {
+    font-size: 1.25rem;
+    font-weight: 900;
+  } @else if $type == smallTextBold {
+    font-size: 0.75rem;
+    font-weight: 700;
+  } @else if $type == smallTextLight {
+    font-size: 0.75rem;
+    font-weight: 300;
+  } @else if $type == bigFact {
+    font-size: 6rem;
+    font-weight: 900;
+  } @else if $type == smallFact {
+    font-size: 2.25rem;
+    font-weight: 900;
+  } @else if $type == icon {
+    font-size: 1.25rem;
+    font-weight: normal;
+  } @else if $type == boldText or default {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  color: $color;
+}

@@ -1,0 +1,40 @@
+.SymptomsCard__item {
+  width: 200px;
+  height: 300px;
+  border-radius: 5.45625px;
+  overflow: hidden;
+  margin: 0px 10px;
+  display: inline-block;
+  position: relative;
+  &--image {
+    height: 160px;
+    overflow: hidden;
+    transition: 0.3s;
+    background-color: #61dafb;
+  }
+  &--image img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+  &--title {
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    color: #22577a;
+    margin: 0;
+  }
+  &--information {
+    display: flex;
+    min-height: 80px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 6px 6px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid lightgrey;
+  }
+}
+.SymptomsCard__image-container:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}

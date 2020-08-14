@@ -1,0 +1,27 @@
+@import '../../styles/colors';
+@import '../../styles/mixins';
+
+.title {
+  margin: 20px 0 7px 10px;
+  @extend %title;
+
+  h2 {
+    margin: 0 5px 0 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--base-color);
+  }
+  button {
+    padding: 0;
+    border: none;
+    background: transparent;
+    font-size: 1.25rem;
+    line-height: 0;
+    color: var(--blue);
+    cursor: pointer;
+
+    &:hover {
+      color: var(--red);
+    }
+  }
+}

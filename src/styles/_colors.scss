@@ -1,11 +1,35 @@
-html {
-  --base-color-background: #282c34;
-  --base-color-link: #61dafb;
-  --base-color: white;
+:root {
+  --blue: #0096ca;
+  --lightBlue: #61dafb;
+  --green: #28d7a6;
+  --lightGreen: #e6fff8;
+  --orange: #cf5300;
+  --lightOrange: #fff7f2;
+  --purple: #554b86;
+  --lightPurple: #eeecf9;
+  --red: #df0656;
+  --lightRed: #fff8fa;
+  --black: #222;
+  --darkGrey: #929292;
+  --lightGrey: #cbcbcb;
+  --lightBackground: #f9f9f9;
+  --darkCardsBackground: #273239;
 }
 
-html[data-theme="dark"] {
+html {
+  --main-color-bg: var(--lightBackground);
   --base-color-background: white;
-  --base-color-link: #fe016c;
-  --base-color: #232323;
+  --base-color-link: var(--lightBlue);
+  --base-color: var(--black);
+  --base-color-button: var(--darkGrey);
+  --base-color-grey: var(--lightGrey);
+}
+
+html[data-theme='dark'] {
+  --main-color-bg: var(--black);
+  --base-color-background: var(--darkCardsBackground);
+  --base-color-link: var(--red);
+  --base-color: var(--lightBackground);
+  --base-color-button: var(--darkCardsBackground);
+  --base-color-grey: var(--darkGrey);
 }
