@@ -1,0 +1,30 @@
+@import '../../styles/colors';
+@import '../../styles/mixins';
+
+.DonutChart {
+  &__wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 320px;
+    @extend %banners;
+    background-color: var(--base-color-background);
+    color: var(--base-color);
+  }
+
+  &__info {
+    position: absolute;
+    top: 58px;
+    left: 38px;
+
+    span {
+      &:first-child {
+        font-size: 16px;
+      }
+      @include font(smallTextBold);
+      display: block;
+      text-align: center;
+      color: inherit;
+    }
+  }
+}

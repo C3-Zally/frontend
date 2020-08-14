@@ -2,6 +2,7 @@ import React from 'react';
 import MainBanner from '../../components/MainBanner';
 import TitleSection from '../../components/TitleSection';
 import ProgressChart from '../../components/ProgressChart';
+import DonutChart from '../../components/DonutChart';
 
 const Home = () => (
   <>
@@ -23,6 +24,8 @@ const Home = () => (
     />
     <TitleSection title='New Cases' infoButton />
     <ProgressChart />
+    <DonutChart type='isRecovery' />
+    <DonutChart type='isFatality' />
   </>
 );
 
