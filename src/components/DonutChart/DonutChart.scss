@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     max-width: 320px;
-    margin: 2rem 0;
+    margin: 2rem 1rem;
     @extend %banners;
     background-color: var(--base-color-background);
     color: var(--base-color);
