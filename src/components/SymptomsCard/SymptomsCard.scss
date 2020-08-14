@@ -11,7 +11,7 @@
     height: 160px;
     overflow: hidden;
     transition: 0.3s;
-    background-color: #61dafb;
+    background-color: var(--lightBlue);
   }
   &--image img {
     max-width: 100%;
@@ -21,11 +21,11 @@
     font-size: 20px;
     font-weight: 900;
     text-align: center;
-    color: #22577a;
+    color: var(--base-color-blue);
     margin: 0;
   }
   &--information {
-    background-color: white;
+    background-color: var(--base-color-background);
     display: flex;
     min-height: 80px;
     flex-direction: column;
@@ -33,8 +33,6 @@
     justify-content: center;
     border-radius: 0 0 6px 6px;
     box-sizing: border-box;
-    // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border: 1px solid lightgrey;
   }
 }
 .SymptomsCard__image-container:hover {

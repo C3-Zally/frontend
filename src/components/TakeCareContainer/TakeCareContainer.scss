@@ -1,28 +1,15 @@
 .TakeCare {
   &__main {
-    // border: solid 1px yellowgreen;
     display: inline-block;
-    width: calc(100vw - 94px);
+    width: 100%;
+    max-width: 1325px;
     justify-content: center;
   }
-  &__main h2 {
-    color: #929292;
-  }
   &__container {
-    // border: solid 1px red;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     justify-content: space-around;
-    width: 84vw;
-    border-radius: 10px;
     margin: 0 auto;
-  }
-}
-
-@media only screen and (max-width: 620px) {
-  .TakeCare__container,
-  .TakeCare__title {
-    margin-left: 25px;
   }
 }

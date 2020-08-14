@@ -1,24 +1,11 @@
 .CareCards__container {
-  // border: 1px solid blue;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 55%;
-  min-width: 635px;
-  max-width: 640px;
-  padding: 15px;
-}
+  width: 630px;
 
-@media only screen and (max-width: 1440px) {
-  .CareCards__container {
-    width: 80%;
-    // background-color: red;
-  }
-}
-
-@media only screen and (max-width: 1060px) {
-  .CareCards__container {
-    min-width: 30%;
-    // background-color: red;
+  @media screen and (max-width: 1228px) {
+    width: 100%;
+    margin-top: 20px;
   }
 }

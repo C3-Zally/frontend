@@ -1,43 +1,12 @@
-.SymptomsCarrousel__main {
-  width: calc(100vw - 94px);
-  h2 {
-    color: #929292;
-  }
-}
 .SymptomsCarousel {
-  // border: solid 1px greenyellow;
   display: flex;
   justify-content: center;
-  padding: 1rem 0;
-  width: calc(100vw - 94px);
-  // overflow: scroll;
+  max-width: 1325px;
   text-align: center;
-  &::-webkit-scrollbar {
-    display: none;
-  }
   &__container {
     white-space: nowrap;
     display: flex;
     flex-wrap: wrap;
-    width: calc(100vw - 94px);
     justify-content: center;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .SymptomsCarrousel__main--title {
-    padding-left: 60px;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .SymptomsCarousel__container {
-    width: 70vw;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .SymptomsCarousel__container {
-    justify-content: end;
   }
 }

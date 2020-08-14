@@ -1,6 +1,5 @@
 .CareCardPrevention {
   &__container {
-    // border: solid 1px blue;
     margin: 0 15px;
     display: flex;
     flex-direction: column;
@@ -21,19 +20,25 @@
     height: 70px;
     font-weight: 700;
     line-height: 70px;
-    min-width: 430px;
     border-radius: 5.45625px;
     margin: -1px 0 0 0;
+    padding: 0 30px;
   }
-}
 
-@media only screen and (max-width: 620px) {
-  .CareCardPrevention__container img,
-  .CareCardPrevention__title {
-    min-width: 30vw;
+  @media screen and (max-width: 1228px) {
+    &__container {
+      margin: 0;
+    }
   }
-  // .CareCardPrevention__title{
-  //   min-width: 30vw;
-  //   font-size: 45px;
-  // }
+
+  @media only screen and (max-width: 620px) {
+    &__container img,
+    &__title {
+      min-width: 30vw;
+    }
+    // .CareCardPrevention__title{
+    //   min-width: 30vw;
+    //   font-size: 45px;
+    // }
+  }
 }
