@@ -2,7 +2,7 @@
   &__main {
     // border: solid 1px yellowgreen;
     display: inline-block;
-    width: 94vw;
+    width: calc(100vw - 94px);
     justify-content: center;
   }
   &__main h2 {

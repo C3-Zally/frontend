@@ -6,6 +6,6 @@
   &__content {
     height: 200vh;
     padding: 0 22px;
-    width: 96vw;
+    width: calc(100vw - 94px);
   }
 }
