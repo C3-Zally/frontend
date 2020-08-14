@@ -19,7 +19,7 @@ const ThemeChanger = () => {
       setThemeState(false);
       return document.documentElement.setAttribute('data-theme', 'dark');
     }
-  });
+  }, [themeState]);
   return (
     <OptionButton
       handlerClick={handleChange}
