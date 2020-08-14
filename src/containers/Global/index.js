@@ -1,6 +1,5 @@
 import React from 'react';
 
-import MainBanner from '../../components/MainBanner';
 import TitleSection from '../../components/TitleSection';
 import ProgressChart from '../../components/ProgressChart';
 import GlobalMap from '../../components/GlobalMap';
