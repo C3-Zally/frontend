@@ -1,10 +1,10 @@
 .map {
-  fill: #61dafb;
-  stroke: #22577a;
+  fill: var(--lightBlue);
+  stroke: var(---dark-blue);
   stroke-width: 0.5;
 }
 .globalMap {
-  fill: #22577a;
-  stroke: #61dafb;
+  fill: var(--dark-blue);
+  stroke: var(--lightBlue);
   stroke-width: 1;
 }
