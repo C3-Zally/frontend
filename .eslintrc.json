@@ -1,27 +1,21 @@
 {
+  "root": true,
   "env": {
     "browser": true,
-    "es2020": true
+    "node": true
   },
-  "extends": ["react-app", "prettier"],
   "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 11,
+    "parser": "babel-eslint",
+    "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": ["react", "prettier"],
+  "extends": ["plugin:react/recommended", "plugin:prettier/recommended"],
+  "plugins": ["react-hooks"],
+  // add your custom rules here
   "rules": {
-    "prettier/prettier": [
-      "error",
-      {
-        "printWidth": 80,
-        "trailingComma": "es5",
-        "semi": true,
-        "jsxSingleQuote": true,
-        "singleQuote": true
-      }
-    ]
+    "prettier/prettier": ["error"],
+    "react/prop-types": 1,
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   }
 }

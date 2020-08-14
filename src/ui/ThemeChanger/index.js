@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import OptionButton from '../OptionButton';
 const ThemeChanger = () => {
-  const [themeState, setThemeState] = useState(false);
+  const [themeState, setThemeState] = useState(true);
 
   const handleChange = () => {
     setThemeState(!themeState);
@@ -15,9 +15,11 @@ const ThemeChanger = () => {
   };
   useEffect(() => {
     const getTheme = localStorage.getItem('Theme');
-    if (getTheme === 'dark')
+    if (getTheme === 'dark') {
+      setThemeState(false);
       return document.documentElement.setAttribute('data-theme', 'dark');
-  });
+    }
+  }, [themeState]);
   return (
     <OptionButton
       handlerClick={handleChange}

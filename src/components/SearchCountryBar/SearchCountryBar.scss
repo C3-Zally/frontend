@@ -2,11 +2,12 @@
   --search-height: 32px;
   position: relative;
   margin-right: 15px;
+  margin-bottom: 10px;
   background-color: var(--base-color-background);
   border-radius: 15px;
 
   &__container {
-    width: 437px;
+    width: 300px;
     height: var(--search-height);
     display: flex;
     justify-content: space-evenly;
@@ -16,7 +17,7 @@
     border-radius: 15px;
   }
   &__input {
-    width: 350px;
+    width: 260px;
     height: 20px;
     border: none;
     font-size: 20px;
