@@ -4,10 +4,10 @@ import TakeCareContainer from '../../components/TakeCareContainer';
 
 const TakeCare = () => {
   return (
-    <>
+    <div>
       <TakeCareContainer />
       <SymptomsCarousel />
-    </>
+    </div>
   );
 };
 
