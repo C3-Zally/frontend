@@ -29,7 +29,7 @@ const Home = () => (
     <section className='progressChart'>
       <TitleSection title='New Cases' infoButton />
       <ProgressChart />
-      <GlobalMap />
+      <GlobalMap alpha2Code='MX' />
     </section>
     <section className='rates'>
       <DonutChart type='isRecovery' />
