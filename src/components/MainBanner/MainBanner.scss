@@ -18,12 +18,27 @@
     grid-column: 1 / -1;
     grid-row: 1 / 2;
     justify-self: start;
+    position: relative;
     width: 100%;
     height: 30px;
     padding: 3px 10px 0;
     list-style: none;
 
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--base-color-background);
+      opacity: 0.7;
+      z-index: 1;
+    }
+
     &__button {
+      position: relative;
+      z-index: 2;
       padding-right: 10px;
       font-size: 0.75rem;
       font-weight: 700;
@@ -92,7 +107,7 @@
     background-size: cover;
   }
 
-  @media screen and (min-width: 500px) {
+  @media screen and (min-width: 550px) {
     grid-template-rows: 30px 50px 140px 30px 200px 18px 102px;
 
     .country-image {
@@ -102,14 +117,7 @@
 
   @media screen and (min-width: 720px) {
     grid-template-rows: 30px 50px 200px 50px 50px 80px 45px;
-
-    .menu {
-      background: linear-gradient(
-        180deg,
-        rgba(235, 235, 235, 1) 0%,
-        rgba(235, 235, 235, 0) 100%
-      );
-    }
+    margin: 0;
 
     .country-image {
       grid-row: 1 / 5;

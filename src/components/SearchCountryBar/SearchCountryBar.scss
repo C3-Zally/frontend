@@ -1,6 +1,7 @@
 .searchbar {
   --search-height: 32px;
   position: relative;
+  margin-right: 15px;
   background-color: var(--base-color-background);
   border-radius: 15px;
 
@@ -43,5 +44,15 @@
     position: absolute;
     top: var(--search-height);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  @media screen and (max-width: 618px) {
+    &__container {
+      width: calc(100vw - 181px);
+    }
+
+    &__input {
+      width: calc(100% - 50px);
+    }
   }
 }

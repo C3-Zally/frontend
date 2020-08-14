@@ -26,8 +26,10 @@ const findItemBy = (param) => (array, value) =>
  * @returns {Array}
  */
 const filterByString = (param) => (array, value) =>
-  array.filter((elment) => elment[param].toLowerCase().includes(value.toLowerCase()));
+  array.filter((elment) =>
+    elment[param].toLowerCase().includes(value.toLowerCase())
+  );
 
 export const findItemByName = findItemBy('name');
 export const findItemByAlpha2Code = findItemBy('alpha2Code');
-export const fiterByName = filterByString('name')
+export const fiterByName = filterByString('name');

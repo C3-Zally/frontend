@@ -1,4 +1,4 @@
-import { findItemByName, findItemByAlpha2Code, fiterByName} from './index';
+import { findItemByName, findItemByAlpha2Code, fiterByName } from './index';
 
 describe('Utility Find Methods', () => {
   const testArray = [
@@ -26,7 +26,7 @@ describe('Utility Find Methods', () => {
   });
 
   it('should return a array with MX item', () => {
-    const correctAnswer = [{name: 'Mexico',alpha2Code: 'MX'}]
+    const correctAnswer = [{ name: 'Mexico', alpha2Code: 'MX' }];
     expect(fiterByName(testArray, 'Mex')).toEqual(correctAnswer);
     expect(fiterByName(testArray, 'MEX')).toEqual(correctAnswer);
     expect(fiterByName(testArray, 'mex')).toEqual(correctAnswer);

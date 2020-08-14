@@ -1,5 +1,5 @@
 import DATA from './countries.json';
-import { findItemByName, findItemByAlpha2Code, fiterByName} from '../arrays';
+import { findItemByName, findItemByAlpha2Code, fiterByName } from '../arrays';
 
 class Countries {
   constructor() {
@@ -20,8 +20,8 @@ class Countries {
   getByAlphaCode(code) {
     return findItemByAlpha2Code(this._data, code);
   }
-  filterCountriesByName(name){
-    return  fiterByName(this._data, name);
+  filterCountriesByName(name) {
+    return fiterByName(this._data, name);
   }
 }
 
