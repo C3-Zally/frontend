@@ -1,21 +1,18 @@
 import React from 'react';
-import CareCardPrevention from '../CareCardPrevention/index';
-import CareCards from '../CareCards/index';
+import CareCardPrevention from '../CareCardPrevention';
+import CareCards from '../CareCards';
+import TitleSection from '../TitleSection';
 import './TakeCareContainer.scss';
 
 const TakeCareContainer = () => {
   return (
-    <React.Fragment>
-      <section className='TakeCare__main'>
-        <h4 className='TakeCare__title'>
-          Take Care{/*<span className='icon__info'></span>*/}
-        </h4>
-        <div className='TakeCare__container'>
-          <CareCardPrevention />
-          <CareCards />
-        </div>
-      </section>
-    </React.Fragment>
+    <section className='TakeCare__main'>
+      <TitleSection title='Take Care' />
+      <div className='TakeCare__container'>
+        <CareCardPrevention />
+        <CareCards />
+      </div>
+    </section>
   );
 };
 export default TakeCareContainer;

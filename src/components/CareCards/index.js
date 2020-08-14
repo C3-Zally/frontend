@@ -1,5 +1,5 @@
 import React from 'react';
-import CareCard from '../CareCard/index';
+import CareCard from '../CareCard';
 
 import WashHand from '../../assets/images/wash-hand.svg';
 import StayAtHome from '../../assets/images/stay-at-home.svg';
@@ -37,13 +37,11 @@ const CareCards = () => {
     },
   ];
   return (
-    <React.Fragment>
-      <div className='CareCards__container'>
-        {cards.map((card) => (
-          <CareCard title={card.title} image={card.image} />
-        ))}
-      </div>
-    </React.Fragment>
+    <div className='CareCards__container'>
+      {cards.map((card) => (
+        <CareCard title={card.title} image={card.image} />
+      ))}
+    </div>
   );
 };
 export default CareCards;

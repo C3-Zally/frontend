@@ -15,15 +15,15 @@
   }
 
   &__title {
-    // border: solid 1px red;
     font-size: 65px;
     background-color: #db5461;
     color: white;
     height: 70px;
+    font-weight: 700;
     line-height: 70px;
     min-width: 430px;
     border-radius: 5.45625px;
-    margin: 0;
+    margin: -1px 0 0 0;
   }
 }
 
