@@ -10,7 +10,7 @@ const Country = () => {
   let random3 = Math.ceil(Math.random() * 5000);
   let random4 = Math.ceil(Math.random() * 50);
   return (
-    <>
+    <div>
       <MainBanner
         alpha2Code={id}
         recoveredValue={random1}
@@ -28,7 +28,7 @@ const Country = () => {
       />
 
       <GlobalMap alpha2Code={id} />
-    </>
+    </div>
   );
 };
 
