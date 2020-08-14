@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Route, Switch, HashRouter } from 'react-router-dom';
 import Home from '../containers/Home';
 import Global from '../containers/Global';
 import Country from '../containers/Country';
@@ -8,7 +8,7 @@ import Error404 from '../containers/Error404';
 import Wrapper from '../components/Wrapper';
 
 const App = () => (
-  <Router>
+  <HashRouter basename='/'>
     <Wrapper>
       <Switch>
         <Route exact path='/' component={Home} />
@@ -18,7 +18,7 @@ const App = () => (
         <Route component={Error404} />
       </Switch>
     </Wrapper>
-  </Router>
+  </HashRouter>
 );
 
 export default App;
