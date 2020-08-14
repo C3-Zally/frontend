@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/frontend/static/css/main.0f3f4004.chunk.css",
+    "main.css": "/frontend/static/css/main.c1752bac.chunk.css",
     "main.js": "/frontend/static/js/main.83595f02.chunk.js",
     "main.js.map": "/frontend/static/js/main.83595f02.chunk.js.map",
     "runtime-main.js": "/frontend/static/js/runtime-main.fa598c00.js",
@@ -8,9 +8,9 @@
     "static/js/2.283bf208.chunk.js": "/frontend/static/js/2.283bf208.chunk.js",
     "static/js/2.283bf208.chunk.js.map": "/frontend/static/js/2.283bf208.chunk.js.map",
     "index.html": "/frontend/index.html",
-    "precache-manifest.51dd09bf12284d439e3f270125001440.js": "/frontend/precache-manifest.51dd09bf12284d439e3f270125001440.js",
+    "precache-manifest.683080f9ac50f37acb66641572c4f4ad.js": "/frontend/precache-manifest.683080f9ac50f37acb66641572c4f4ad.js",
     "service-worker.js": "/frontend/service-worker.js",
-    "static/css/main.0f3f4004.chunk.css.map": "/frontend/static/css/main.0f3f4004.chunk.css.map",
+    "static/css/main.c1752bac.chunk.css.map": "/frontend/static/css/main.c1752bac.chunk.css.map",
     "static/js/2.283bf208.chunk.js.LICENSE.txt": "/frontend/static/js/2.283bf208.chunk.js.LICENSE.txt",
     "static/media/avoid-crowds.svg": "/frontend/static/media/avoid-crowds.03a21017.svg",
     "static/media/cough.svg": "/frontend/static/media/cough.a70062c4.svg",
@@ -31,7 +31,7 @@
   "entrypoints": [
     "static/js/runtime-main.fa598c00.js",
     "static/js/2.283bf208.chunk.js",
-    "static/css/main.0f3f4004.chunk.css",
+    "static/css/main.c1752bac.chunk.css",
     "static/js/main.83595f02.chunk.js"
   ]
 }
