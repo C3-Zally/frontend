@@ -1,5 +1,6 @@
 import React from 'react';
 import SymptomsCards from '../SymptomsCard';
+import TitleSection from '../TitleSection';
 import './SymptomsCarousel.scss';
 import Tiredness from '../../assets/images/tiredness.svg';
 import Cough from '../../assets/images/cough.svg';
@@ -39,7 +40,7 @@ const SymptomsCarousel = () => {
   return (
     <React.Fragment>
       <section className='SymptomsCarrousel__main'>
-        <h4 className='SymptomsCarrousel__main--title'>Symptoms</h4>
+        <TitleSection title='Symptoms' />
         <div className='SymptomsCarousel'>
           <div className='SymptomsCarousel__container'>
             {symptoms.map((symptom) => (

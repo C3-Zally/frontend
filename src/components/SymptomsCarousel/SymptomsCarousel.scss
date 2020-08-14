@@ -1,26 +1,12 @@
-.SymptomsCarrousel__main {
-  width: 100%;
-  &--title {
-    font-size: 16px;
-    font-weight: bold;
-    color: #929292;
-    padding-left: 10px;
-  }
-}
 .SymptomsCarousel {
-  padding: 1rem 0;
-  overflow: scroll;
+  display: flex;
+  justify-content: center;
+  max-width: 1325px;
   text-align: center;
-  &::-webkit-scrollbar {
-    display: none;
-  }
   &__container {
     white-space: nowrap;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .SymptomsCarrousel__main--title {
-    padding-left: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
