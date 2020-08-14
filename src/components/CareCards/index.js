@@ -39,7 +39,7 @@ const CareCards = () => {
   return (
     <div className='CareCards__container'>
       {cards.map((card) => (
-        <CareCard title={card.title} image={card.image} />
+        <CareCard title={card.title} image={card.image} key={card.title} />
       ))}
     </div>
   );
