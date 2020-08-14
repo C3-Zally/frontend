@@ -1,11 +1,12 @@
 .SymptomsCard__item {
   width: 200px;
-  height: 300px;
+  // height: 300px;
   border-radius: 5.45625px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  margin: 0px 10px;
-  display: inline-block;
-  position: relative;
+  margin: 10px;
+  // display: inline-block;
+  // position: relative;
   &--image {
     height: 160px;
     overflow: hidden;
@@ -24,6 +25,7 @@
     margin: 0;
   }
   &--information {
+    background-color: white;
     display: flex;
     min-height: 80px;
     flex-direction: column;
@@ -31,7 +33,7 @@
     justify-content: center;
     border-radius: 0 0 6px 6px;
     box-sizing: border-box;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border: 1px solid lightgrey;
   }
 }

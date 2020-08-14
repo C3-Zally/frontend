@@ -1,13 +1,13 @@
 .SymptomsCarrousel__main {
   width: 100%;
-  &--title {
-    font-size: 16px;
-    font-weight: bold;
+  h2 {
     color: #929292;
-    padding-left: 10px;
   }
 }
 .SymptomsCarousel {
+  // border: solid 1px greenyellow;
+  display: flex;
+  justify-content: center;
   padding: 1rem 0;
   overflow: scroll;
   text-align: center;
@@ -16,11 +16,27 @@
   }
   &__container {
     white-space: nowrap;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    justify-content: center;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .SymptomsCarrousel__main--title {
     padding-left: 60px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .SymptomsCarousel__container {
+    width: 70vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .SymptomsCarousel__container {
+    justify-content: end;
   }
 }
