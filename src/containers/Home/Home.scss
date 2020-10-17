@@ -5,11 +5,15 @@
 .overview {
   grid-area: banner;
 }
-
 .progressChart {
   grid-area: chart;
 }
 
+.map {
+  grid-area: map;
+}
+
 .rates {
   grid-area: rates;
+  align-self: start;
 }

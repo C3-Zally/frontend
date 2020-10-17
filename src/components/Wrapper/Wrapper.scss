@@ -6,10 +6,12 @@
   &__content {
     display: grid;
     grid-template: repeat(4, auto) / 1fr 320px;
-    grid-template-areas: 'search search' 'banner banner' 'chart rates';
+    grid-template-areas: 'search search' 'banner banner' 'chart chart' 'map rates';
+    grid-gap: 0 10px;
     justify-content: center;
     align-items: center;
     padding: 0 22px;
-    width: calc(100vw - 94px);
+    width: calc(100vw - 50px);
+    max-width: 1184px;
   }
 }
