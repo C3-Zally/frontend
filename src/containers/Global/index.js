@@ -7,17 +7,14 @@ import DonutChart from '../../components/DonutChart';
 const Global = (params) => {
   return (
     <>
-      <section className='overview'>
-        <TitleSection title='Overview' />
+      <section className='progressChart'>
+        <TitleSection title='New Cases' infoButton />
         <ProgressChart />
       </section>
+      <GlobalMap />
       <section className='rates'>
         <DonutChart type='isRecovery' />
         <DonutChart type='isFatality' />
-      </section>
-      <section className='progressChart'>
-        <TitleSection title='New Cases' infoButton />
-        <GlobalMap />
       </section>
     </>
   );
